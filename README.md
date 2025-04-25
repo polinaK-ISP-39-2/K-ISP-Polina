@@ -23,7 +23,9 @@ sudo systemctl disable firewalld
 - `systemctl stop firewalld`: Остановила службу файервола.
 - `systemctl disable firewalld`: Отключила автозапуск файервола при загрузке системы.
 
-![image](https://github.com/user-attachments/assets/09c7bad8-cf1a-4677-9fa6-72ecd4794353)
+![image](https://github.com/user-attachments/assets/2f1152d4-d5ea-4b70-b699-533f9097adb9)
+
+
 
 ---
 
@@ -38,7 +40,9 @@ sudo yum install -y wget curl git tar
 **Почему это важно:**
 Эти инструменты нужны для скачивания файлов, работы с Git и распаковки архивов.
 
-![image](https://github.com/user-attachments/assets/9ecbeae8-4496-40ec-b994-70c9c0116c04)
+![image](https://github.com/user-attachments/assets/6c76c6f7-1cf8-43fa-a1e3-90ec23155bee)
+
+
 
 ---
 
@@ -63,7 +67,9 @@ systemctl status chronyd
 - Добавила службу в автозагрузку и запустила её.
 - Проверила, что всё работает корректно.
 
-![image](https://github.com/user-attachments/assets/be6b23ab-3c4e-4ee6-aa72-fbad8ee38714)
+![image](https://github.com/user-attachments/assets/2dad2889-0037-441c-a85e-d8eb32f429c4)
+
+
 
 ---
 
@@ -86,7 +92,10 @@ sudo sed -i 's/^SELINUX=.*/SELINUX=disabled/g' /etc/selinux/config
 - Проверила режим работы SELinux.
 - Переключила его в режим Permissive и изменила конфигурационный файл для полного отключения при следующей загрузке.
 
-![image](https://github.com/user-attachments/assets/d4dd2436-0f4e-4714-9c42-7153e500a7dc)
+![image](https://github.com/user-attachments/assets/8e1cd413-d35a-4d31-8700-9fb79b6fdee7)
+
+
+
 
 ---
 
@@ -98,7 +107,9 @@ sudo sed -i 's/^SELINUX=.*/SELINUX=disabled/g' /etc/selinux/config
 wget https://github.com/prometheus/prometheus/releases/download/v3.3.0/prometheus-3.3.0.linux-amd64.tar.gz
 ```
 
-![image](https://github.com/user-attachments/assets/c0f402ec-5a29-4cb4-804d-50cc58628cda)
+![image](https://github.com/user-attachments/assets/f9bafefd-b8e8-42d3-8e3b-a606a6a80008)
+
+
 
 ---
 
@@ -116,7 +127,9 @@ ls /etc/prometheus
 ls /var/lib/prometheus
 ```
 
-![image](https://github.com/user-attachments/assets/c1220634-5eae-401c-b11c-049249037dd4)
+![image](https://github.com/user-attachments/assets/775fbe74-fc2d-483e-9743-5f8070a8af7c)
+
+
 
 ---
 
@@ -128,7 +141,9 @@ ls /var/lib/prometheus
 tar -zxf prometheus-*.linux-amd64.tar.gz
 ```
 
-![image](https://github.com/user-attachments/assets/8f009e6c-6dd0-4543-9c10-5437c9c6235f)
+![image](https://github.com/user-attachments/assets/65f58797-713e-46dc-a511-054852696b83)
+
+
 
 ---
 
@@ -140,7 +155,9 @@ tar -zxf prometheus-*.linux-amd64.tar.gz
 cd prometheus-*.linux-amd64
 ```
 
-![image](https://github.com/user-attachments/assets/f7fe10f7-a257-4346-ba35-f0facb8cd33d)
+![image](https://github.com/user-attachments/assets/5b2b6deb-4f89-447f-a246-1e03e585f173)
+
+
 
 ---
 
@@ -152,7 +169,9 @@ cd prometheus-*.linux-amd64
 pwd
 ```
 
-![image](https://github.com/user-attachments/assets/914c1be2-1bea-4481-97bf-76b6142730ca)
+![image](https://github.com/user-attachments/assets/d1c9fb04-d455-4b21-80b2-b0e41905483b)
+
+
 
 ---
 
@@ -169,7 +188,9 @@ sudo cp prometheus.yml /etc/prometheus/
 - Бинарные файлы (`prometheus`, `promtool`) поместила в `/usr/local/bin/` для глобального доступа.
 - Конфигурационный файл (`prometheus.yml`) скопировала в `/etc/prometheus/`.
 
-![image](https://github.com/user-attachments/assets/4969637b-e3c0-4dea-aa68-8a0fe5649282)
+![image](https://github.com/user-attachments/assets/ed00d099-2bfb-43c0-a051-60679ec58486)
+
+
 
 ---
 
@@ -181,7 +202,9 @@ sudo cp prometheus.yml /etc/prometheus/
 cd .. && rm -rf prometheus-*.linux-amd64/ && rm -f prometheus-*.linux-amd64.tar.gz
 ```
 
-![image](https://github.com/user-attachments/assets/14fd5630-3389-4467-995f-cdd501d5b20a)
+![image](https://github.com/user-attachments/assets/6534cbbd-e4f5-4d23-af7d-016cea05df3a)
+
+
 
 ---
 
@@ -193,7 +216,9 @@ cd .. && rm -rf prometheus-*.linux-amd64/ && rm -f prometheus-*.linux-amd64.tar.
 pwd
 ```
 
-![image](https://github.com/user-attachments/assets/52eede5a-f0ec-475f-8ea8-d9efc3f9e96a)
+![image](https://github.com/user-attachments/assets/6f6098ff-119d-4e3d-888d-91342ee3c468)
+
+
 
 ---
 
@@ -205,7 +230,8 @@ pwd
 ls -l
 ```
 
-![image](https://github.com/user-attachments/assets/395c351a-a81d-4171-b09e-d9adb8e9239f)
+![image](https://github.com/user-attachments/assets/e95ae4d1-5360-4862-8d07-b4200134d6f3)
+
 
 
 ---
